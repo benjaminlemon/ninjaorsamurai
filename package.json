@@ -1,0 +1,20 @@
+{
+  "name": "ninjaorsamurai",
+  "version": "1.0.0",
+  "description": "Determine whether ninja or samurai are the baddest",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Benjamin Lemon",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.1",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "core-js": "^3.33.2",
+    "regenerator-runtime": "^0.14.0"
+  }
+}

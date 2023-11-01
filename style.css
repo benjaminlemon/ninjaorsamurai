@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 20px;
+  padding: 50px;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  place-items: center;
+  color: #eee;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.prompt {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.choice-title {
+  color: white;
+  margin: 20px;
+}
+
+.tallybox-ninja {
+  margin: 20px;
+}
+
+.tallybox-samurai {
+  margin: 20px;
+}
+
+.vote-form {
+  background-color: chartreuse;
+  border: 5px dotted white;
+  padding: 20px;
+  width: 750px;
+  color: black;
+}
+
+img {
+  height: 500px;
+  margin-bottom: 25px;
+}
+
+#ninja-image {
+  border: 5px dotted white;
+}
+
+#samurai-image {
+  border: 5px dotted white;
+}
+
+input,
+button {
+  padding: 10px;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  width: 150px;
+  margin-top: 20px;
+}
+
+a {
+  color: white;
+}
+.comment {
+  width: 750px;
+}
