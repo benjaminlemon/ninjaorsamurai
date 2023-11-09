@@ -1,6 +1,7 @@
 {
   "name": "ninjaorsamurai",
   "version": "1.0.0",
+  "type": "module",
   "description": "Determine whether ninja or samurai are the baddest",
   "default": "index.html",
   "scripts": {

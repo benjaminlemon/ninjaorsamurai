@@ -1,16 +1,32 @@
-'use strict';
+import * as model from './model.js';
+import * as view from './view.js';
 
-let tallyNinja = 0;
-let tallySamurai = 0;
+('use strict');
 
-document.querySelector('.button-ninja').addEventListener('click', function () {
-  tallyNinja++;
-  document.querySelector('.tallybox-ninja').textContent = tallyNinja;
-});
+// CONTROLLER
+//ninja tally update-subscriber
+const updateNinjaTally = function () {
+  let ninjaTally = model.getNinjaTally();
+  ninjaTally++;
+  model.setNinjaTally(ninjaTally);
+  view.renderNinjaTally(ninjaTally);
+};
 
-document
-  .querySelector('.button-samurai')
-  .addEventListener('click', function () {
-    tallySamurai++;
-    document.querySelector('.tallybox-samurai').textContent = tallySamurai;
-  });
+//samurai tally update-subscriber
+const updateSamuraiTally = function () {
+  let samuraiTally = model.getSamuraiTally();
+  samuraiTally++;
+  model.setSamuraiTally(samuraiTally);
+  view.renderSamuraiTally(samuraiTally);
+};
+
+const init = function () {
+  // localStorage.clear();
+  model.initiateLocalStorage();
+  view.renderNinjaTally(model.getNinjaTally());
+  view.renderSamuraiTally(model.getSamuraiTally());
+  view.handleNinjaButton(updateNinjaTally);
+  view.handleSamuraiButton(updateSamuraiTally);
+};
+
+init();
